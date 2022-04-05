@@ -14,6 +14,9 @@ let findUser = async function (url) {
   try {
     let a = await fetch(url);
     let obj = await a.json();
+    if (obj.message == "Not Found") {
+      throw console.log("topolmadim");
+    }
     let html = `
     <div class="user__img">
       <img class="user-img" src="${obj.avatar_url}" alt="" />
@@ -35,8 +38,9 @@ let findUser = async function (url) {
           <p class="about__text yes__border">Member Since:${obj.created_a}</p>
         </div>
       </div>
-    </div>`;
-    user.insertAdjacentHTML("beforeend", html);
+    </div>
+    </br>`;
+    user.insertAdjacentHTML("afterbegin", html);
   } catch (error) {
     console.log(error);
   }
