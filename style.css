@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.header {
+  width: 100vw;
+  background-color: blue;
+  color: #fff;
+  padding: 2rem 5rem;
+}
+.name {
+  font-size: 2.6rem;
+}
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+.box {
+  border: 0.1rem solid rgba(119, 119, 119, 0.423);
+  padding: 3rem;
+  border-radius: 0.6rem;
+}
+.heading__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.title {
+  font-size: 3.2rem;
+}
+.description {
+  font-size: 2rem;
+}
+.user__input {
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(102, 102, 102, 0.398);
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
+}
+.user__input:focus {
+  outline: 0.3rem ridge rgba(50, 214, 220, 0.6);
+}
+.user__info {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.user__img {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.user-img {
+  width: 100%;
+}
+.statistics {
+  display: flex;
+  gap: 1rem;
+}
+.stat {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+.stat__1 {
+  background-color: blue;
+}
+.stat__2 {
+  background-color: rgba(54, 54, 54, 0.774);
+}
+.stat__3 {
+  background-color: rgb(67, 182, 18);
+}
+.stat__4 {
+  background-color: rgba(19, 166, 192, 0.881);
+}
+.user__about {
+  width: 80%;
+}
+.table__info {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.about__text {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  border: 0.1rem solid rgba(136, 136, 136, 0.318);
+  border-bottom: none;
+}
+.yes__border {
+  border-bottom: 0.1rem solid rgba(136, 136, 136, 0.276);
+}
+.btn {
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.6rem;
+  text-align: center;
+}
+.repo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.report {
+  display: flex;
+  gap: 1rem;
+}
+.repo__name {
+  font-size: 1.8rem;
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+.heading__secondary {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
