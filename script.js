@@ -56,9 +56,9 @@ const addRepo = async function (url) {
         let html = `<div class="box repo">
   <a href="${repo.html_url}" class="repo__name">${repo.name}</a>
   <div class="report">
-    <p class="stat stat__1">Starts: ${repo}</p>
-    <p class="stat stat__2">Watchers: 25</p>
-    <p class="stat stat__3">Forks: 22</p>
+    <p class="stat stat__1">Stars: ${repo.stargazers_count}</p>
+    <p class="stat stat__2">Watchers: ${repo.watchers}</p>
+    <p class="stat stat__3">Forks: ${repo.forks}</p>
   </div>
 </div>`;
         main.insertAdjacentHTML("afterbegin", html);
